@@ -1,0 +1,87 @@
+.header {
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(1, rgb(235,0,0)),
+      color-stop(0, rgb(153,0,0))
+  );
+  color: white;
+  padding: 4px 10px 6px 10px;
+/*  margin: -3em;
+  margin-bottom: 0;*/
+  text-shadow: rgba(1, 1, 1, 0.347656) 0px -1px 2px;
+}
+
+.header h1 {
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.header ul {
+  margin: 6px 0 0 0;
+  padding: 0;
+}
+
+.header li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.footer {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, rgb(235,0,0)),
+      color-stop(1, rgb(153,0,0))
+  );
+  color: white;
+  padding: 3px 10px 3px 10px;
+}
+
+h5 {
+  margin-bottom: 2px;
+}
+
+.body {
+  margin: 1em;
+}
+
+.body h3 {
+  color: #900;
+  margin-bottom: 3px;
+}
+
+tbody tr:nth-child(even) td, 
+tbody tr.even td  { 
+	background: #eee; 
+}
+
+tbody tr td {
+  vertical-align: top;
+}
+
+h5, p, ul {
+  margin-left: 5px;
+}
+
+ul.clean {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.clean li {
+/*  line-height: 0.8;*/
+  margin-bottom: 0;
+  padding-bottom: 0;
+  clear: both;
+  margin-left: 0;
+  padding-left: 5px;
+}

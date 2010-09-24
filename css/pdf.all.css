@@ -1,0 +1,50 @@
+* { margin: 0; padding: 0;}
+
+/* PDF/Print style */
+@page { 
+  size: US-Letter portrait;
+  margin: 54px;
+
+  @bottom-right {
+    content: counter(page);
+    font-size: 10px;
+    font-style: italic;
+  }
+}
+
+/* HTML PDF VIEWER */
+#pdf-viewer { display: none; }
+
+/* General */
+html, body {
+  min-height: 100%;
+}
+
+/*body {
+  color: #333; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 15px;
+}
+
+h2 {
+  color: #255697; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 15px;
+  margin-bottom: 0.8em;
+}
+
+p {
+  margin-bottom: 0.8em;
+}
+*/
+
+/* Pages */
+.page {
+  width: 504px;
+  min-height: 684px;
+  margin: 0 auto;
+  page-break-after: always;
+  border: 1px solid white; /* wkhtmltopdf hack */
+}
